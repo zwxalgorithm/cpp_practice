@@ -11,7 +11,7 @@ int main()
 	{
 		sd.push_back(word);
 	}
-	for(auto si = sd.begin(); si != sd.end(); ++si)
+	for(auto si = sd.begin(); si != sd.end(); si++)
 	{
 		cout << *si << endl;
 	}
