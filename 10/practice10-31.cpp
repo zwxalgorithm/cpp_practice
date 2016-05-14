@@ -16,7 +16,7 @@ int main()
 	sort(vi.begin(), vi.end());
 
 	ostream_iterator<int> out_iter(cout, " ");
-	copy(vi.begin(), vi.end(), out_iter);
+	unique_copy(vi.begin(), vi.end(), out_iter);
 
 	return 0;
 }
