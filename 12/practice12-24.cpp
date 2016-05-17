@@ -8,7 +8,7 @@ main()
 {
 	char c;
 	char *r = new char[20];
-	int l;
+	int l = 0;
 	
 	while(cin.get(c))
 	{
@@ -17,13 +17,15 @@ main()
 		r[l++] = c;
 		if(l == 20)
 		{
-			cout << "da dao rongliang shangxian" << endl;
+			cout << "达到容量上限" << endl;
 			break;
 		}
 	}
 	
 	r[l] = 0;
 	cout << r << endl;
+	
+	delete [] r;
 	
 	return 0;
 }
