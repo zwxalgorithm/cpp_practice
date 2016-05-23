@@ -54,7 +54,7 @@ ostream &query_and_print(const string &sought, ostream &os)
 		os << sought << "出现了" << lines.size() << "次" << endl;
 		for(auto num: lines)
 		{
-			cout << "\t(第" << num + 1 << "行):" << *(file.begin() + num) << endl;
+			cout << "\t(第" << num +1 << "行):" << *(file.begin() + num) << endl;
 		}
 	
 	}
